@@ -1,0 +1,10 @@
+insert into antenne_mobile (antenne_mobile_id, operateur,technologie) values (1, 1,'4G');
+insert into antenne_mobile (antenne_mobile_id, operateur,technologie) values (2, 2,'4G');
+insert into localisation (localiation_id, adresse_complete, code_postal, latitude, longitude, nom_departement, numero_departement, numero_region, strate, ville) values (1, 'Maison de test - 88 petite rue, 60530 Crouy en Thelle','60530',49.215, 2.3217,'OISE','60',32,'rurale','Crouy en Thelle');
+insert into localisation (localiation_id, adresse_complete, code_postal, latitude, longitude, nom_departement, numero_departement, numero_region, strate, ville) values (2, '258 av Daumesnil','75012',43.215, 3.3217,'Paris','75',11,'dense','Paris');
+insert into test_mobile (test_id, date, debit_mbits_pars, file_name, file_type, page_chargee_moins1s, page_chargee_moins5s, page_chargee_moins60s, qualite_correcte, qualite_parfaite, situation, temps_en_secondes, terminal, time, url) values (1, '2020-12-24', 10, ' ', ' ', 1, 0, 0, 1, 1, null, 1, null, null, 'www.caf.fr');
+insert into test_mobile (test_id, date, debit_mbits_pars, file_name, file_type, page_chargee_moins1s, page_chargee_moins5s, page_chargee_moins60s, qualite_correcte, qualite_parfaite, situation, temps_en_secondes, terminal, time, url) values (2, '2020-12-23', 11, ' ', ' ', 1, 0, 0, 1, 1, null, 1, null, null, 'www.google.fr');
+--insert into antenne_mobile_tests (antenne_mobile_antenne_mobile_id, tests_test_id,localisation_localiation_id ) values (1, 1,1);
+--insert into antenne_mobile_tests (antenne_mobile_antenne_mobile_id, tests_test_id,localisation_localiation_id) values (2, 2,2);
+insert into localisation_antenne_mobiles (localisation_localiation_id, antenne_mobiles_antenne_mobile_id) values (1,1);
+insert into localisation_antenne_mobiles (localisation_localiation_id, antenne_mobiles_antenne_mobile_id) values (2,2);
